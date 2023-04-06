@@ -6,11 +6,11 @@ namespace IOC.console
 {
     internal class BL
     {
-        private DAL _dal { get; set; }
+        private IDAL _dal { get; set; }
 
-        public BL()
+        public BL(IDAL dal)
         {
-            _dal = new DAL();
+            _dal = dal;
         }
 
         public List<Product> GetProducts()

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace IOC.console
 {
-    internal class DAL
+    internal class DAL : IDAL
     {
         public List<Product> GetProducts()
         {
